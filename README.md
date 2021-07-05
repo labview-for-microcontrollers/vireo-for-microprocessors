@@ -4,7 +4,7 @@ This is a project for getting [Vireo](https://github.com/ni/VireoSDK), a runtime
 
 ## Goal: User Experience Similar to MicroPython/CircuitPython
 
-A great installation and user experience solution would be something similar to MicroPython/CircuitPython (see [Installing CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython) and [The CircuitPy Drive](https://learn.adafruit.com/welcome-to-circuitpython/the-circuitpy-drive)).
+A great installation and user experience solution would be something similar to [MicroPython](https://github.com/micropython/micropython)/[CircuitPython](https://github.com/adafruit/circuitpython) (see [Installing CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython) and [The CircuitPy Drive](https://learn.adafruit.com/welcome-to-circuitpython/the-circuitpy-drive)).
 
 ### Installing Vireo onto a Microprocessor Board
 
@@ -16,3 +16,7 @@ A great installation and user experience solution would be something similar to 
 
 *   With the Vireo firmware running, the board will show up as a "VIREO" USB drive on the user's computer.
 *   The user then copies over a `main.via` file, which causes the Vireo firmware to immediately run it (or restart it when the `main.via` file is re-saved).  Vireo also runs this `main.via` file at boot/startup if present.
+
+## Idea: Could some of MicroPython/CircuitPython sources be leveraged for Startup and GPIO 
+
+The [MicroPython](https://github.com/micropython/micropython) and [CircuitPython](https://github.com/adafruit/circuitpython) projects have already solved the challenge of abstracting the handling of Startup and GPIO. Could that codebase be leveraged and linked to the vireo runtime instead of python?
