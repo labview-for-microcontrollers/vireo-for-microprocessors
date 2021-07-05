@@ -2,7 +2,18 @@
 
 This is a project for getting [Vireo](https://github.com/ni/VireoSDK), a runtime engine for VIs saved in VI assembly (.via) format, compiled and running on microprocessor targets like Raspberry Pi Pico (RP2040).
 
-## Goal: User Experience Similar to MicroPython/CircuitPython
+## Short Term Goal: "Hello World!" on the RPI Pico
+
+Our "Hello World!" proof of concept will basically look as follows:
+
+*   **Build Vireo for RPI Pico** - Build Vireo into an RF2 file that can be run on the RPI Pico
+*   **Start Vireo in Interactive Mode** - Have Vireo start in interactive mode (where it is listening for commands on STDIN and outputting print statement results to STDOUT)
+*   **Use USB Serial for STDIO** - Use the Pico's USB serial UART for STDIN and STDOUT, so that VIA commands and results can be sent via serial.
+*   **Send "HelloWorld.vi" via Putty** -  Use Putty (or Minicom) to send the  "HelloWorld.via" VIA data to Vireo and view the response.
+
+Alternatively, it might be easier to not start Vireo in interactive mode and simply build "HelloWorld.via" into the RF2 file and execute it at startup. 
+
+## Longer Term Goal: User Experience Similar to MicroPython/CircuitPython
 
 A great installation and user experience solution would be something similar to [MicroPython](https://github.com/micropython/micropython)/[CircuitPython](https://github.com/adafruit/circuitpython) (see [Installing CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython) and [The CircuitPy Drive](https://learn.adafruit.com/welcome-to-circuitpython/the-circuitpy-drive)).
 
