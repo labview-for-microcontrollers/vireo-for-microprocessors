@@ -20,3 +20,7 @@ A great installation and user experience solution would be something similar to 
 ## Idea: Could some of MicroPython/CircuitPython sources be leveraged for Startup and GPIO 
 
 The [MicroPython](https://github.com/micropython/micropython) and [CircuitPython](https://github.com/adafruit/circuitpython) projects have already solved the challenge of abstracting the handling of Startup and GPIO. Could that codebase be leveraged and linked to the vireo runtime instead of python?
+
+## Want to Help?
+
+*   [Join the discussion here](https://github.com/labview-for-microcontrollers/exploring-labview-for-microcontrollers/discussions).
